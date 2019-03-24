@@ -227,7 +227,7 @@ Module.register("MMM-Hsl-stops",{
         var tdLine = document.createElement("td");
         var iconMode = this.svgIconFactory(stopTimes.trip.route.mode);
         var iconRealTime = this.svgIconFactory("realtime");
-        var nexticonRealTime = this.svgIconFactory("realtime");
+        // var nexticonRealTime = this.svgIconFactory("realtime");
         var txtLine = document.createTextNode(stopTimes.trip.route.shortName);
          
         tdLine.appendChild(iconMode);
@@ -243,16 +243,16 @@ Module.register("MMM-Hsl-stops",{
         }
         tdTimeCurrent.appendChild(document.createTextNode(this.formatTime(time)));
 
-        var tdTimeNext = document.createElement("td");
-        if (!stopTimes.trip.nextrealtime){
-            tdTimeNext.className = "time light timeNext timeNextNotRealTime";
-        }
-        else {
-            tdTimeNext.appendChild(nexticonRealTime);
-            tdTimeNext.className = "time light timeNext timeNextRealTime";
-        }
-        var timeNext = moment.unix(stopTimes.serviceDay+stopTimes.trip.next);
-        tdTimeNext.appendChild(document.createTextNode(this.formatTime(timeNext)));
+        // var tdTimeNext = document.createElement("td");
+        // if (!stopTimes.trip.nextrealtime){
+        //     tdTimeNext.className = "time light timeNext timeNextNotRealTime";
+        // }
+        // else {
+        //     tdTimeNext.appendChild(nexticonRealTime);
+        //     tdTimeNext.className = "time light timeNext timeNextRealTime";
+        // }
+        // var timeNext = moment.unix(stopTimes.serviceDay+stopTimes.trip.next);
+        // tdTimeNext.appendChild(document.createTextNode(this.formatTime(timeNext)));
         
         var tr = document.createElement("tr");
         if (stopTimes.realtime){
@@ -271,7 +271,7 @@ Module.register("MMM-Hsl-stops",{
         tr.appendChild(tdLine);
         tr.appendChild(tdDestination);
         tr.appendChild(tdTimeCurrent);
-        tr.appendChild(tdTimeNext);
+        // tr.appendChild(tdTimeNext);
         return tr;
     },
 
