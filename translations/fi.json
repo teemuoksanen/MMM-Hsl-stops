@@ -2,13 +2,13 @@
 	"LOADING":				"Käynnistetään &hellip;",
 	"STARTINGMODULE":		"Moduulin aktivointi",
 	"NOW":					"Nyt",
-	"1MIN":					"Minuutti",
-	"MINUTES":				"minuuttia",
+	"1MIN":					"1 min",
+	"MINUTES":				"min",
 	"LINEHEADER":			"Reitti",
 	"DESTINATIONHEADER":	"Määränpää",
 	"PLATFORMHEADER":		"Laituri",
 	"TIMECURRENT":			"Lähtee",
-	"TIMENEXT":				"Seuraava",
-	"ALERT":				"Huomio",
+	"TIMENEXT":				"Seur",
+	"ALERT":				"Huom!",
 	"SETAPI":				"Aseta API URL seuraavan moduulin asetuksiin: "
 }
