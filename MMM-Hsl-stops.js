@@ -174,20 +174,20 @@ Module.register("MMM-Hsl-stops",{
         caption_stopname.appendChild(caption_stopcode);
         caption_tostop.appendChild(this.svgIconFactory("walk"));
         caption_tostop.appendChild(document.createTextNode(this.config.timeToStop + " " + this.translate("MINUTES")));
-        for (var key in stopRoutes) {
-            if(!stopRoutes.hasOwnProperty(key)) continue;
-            val = stopRoutes[key].shortName;
-            var route = document.createElement("div");
-            if(this.config.routeIdFilter.includes(stopRoutes[key].shortName) || (this.isEmpty(this.config.routeIdFilter))){route.className = "route bright";} // Bright style if route is in routeIdFilter
-            else {route.className = "route dimmed";} // Dimmed style if route is not in routeIdFilter
-            route.appendChild(this.svgIconFactory(stopRoutes[key].mode));
-            route.appendChild(document.createTextNode(" " + val));
-            caption_routes.appendChild(route);
-        }
+        // for (var key in stopRoutes) {
+        //     if(!stopRoutes.hasOwnProperty(key)) continue;
+        //     val = stopRoutes[key].shortName;
+        //     var route = document.createElement("div");
+        //     if(this.config.routeIdFilter.includes(stopRoutes[key].shortName) || (this.isEmpty(this.config.routeIdFilter))){route.className = "route bright";} // Bright style if route is in routeIdFilter
+        //     else {route.className = "route dimmed";} // Dimmed style if route is not in routeIdFilter
+        //     route.appendChild(this.svgIconFactory(stopRoutes[key].mode));
+        //     route.appendChild(document.createTextNode(" " + val));
+        //     caption_routes.appendChild(route);
+        // }
 
         caption.appendChild(caption_stopname);
         caption.appendChild(caption_tostop);
-        caption.appendChild(caption_routes);
+        // caption.appendChild(caption_routes);
         return caption;
     },
 
