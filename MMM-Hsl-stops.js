@@ -215,7 +215,7 @@ Module.register("MMM-Hsl-stops",{
         thead.appendChild(thLine);
         thead.appendChild(thDestination);
         thead.appendChild(thTimeCurrent);
-        thead.appendChild(thTimeNext);
+        // thead.appendChild(thTimeNext);
         
         return thead;
     },
